@@ -72,7 +72,7 @@ class _DenseLayer(nn.Module):
 
         out2 = self.branch2a(x)
         out2 = self.branch2b(out2)
-        out3 = self.branch2c(out2)
+        out2 = self.branch2c(out2)
 
         out = torch.cat([x, out1, out2], dim=1)
         return out
